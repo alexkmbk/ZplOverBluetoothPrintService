@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.alexkmbk.intentfilter.MainActivity">
+
+    <EditText
+        android:id="@+id/Log"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:enabled="true"
+        android:gravity="top|left"
+        android:hint="Log"
+        android:inputType="textMultiLine|textPersonName"
+        android:singleLine="false"
+        android:visibility="visible" />
+
+    <EditText
+        android:id="@+id/MacAddressEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Mac address"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/PrintButton"
+        android:layout_width="140dp"
+        android:layout_height="35dp"
+        android:layout_marginLeft="220dp"
+        android:layout_marginTop="470dp"
+        android:onClick="onClick"
+        android:text="Test print" />
+
+</android.support.design.widget.CoordinatorLayout>
