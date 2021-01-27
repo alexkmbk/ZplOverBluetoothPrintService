@@ -15,8 +15,8 @@ To make a connection (or reconnect) to the printer from 1C:Enterpise for Android
 ```bsl
 ApplicationRun = New MobileDeviceApplicationRun;
 ApplicationRun.Action = "com.alexkmbk.intent.action.sendZPL";
-ApplicationRun.AdditionalData.Добавить("MacAddress", PrinterInfo.MacAddress);
-ApplicationRun.AdditionalData.Добавить("Command", "Connect");
+ApplicationRun.AdditionalData.Add("MacAddress", PrinterInfo.MacAddress);
+ApplicationRun.AdditionalData.Add("Command", "Connect");
 ApplicationRun.Run(False);		     	
 ```
 To send some ZPL commands to the printer from 1C:Enterpise for Android:
@@ -24,8 +24,8 @@ To send some ZPL commands to the printer from 1C:Enterpise for Android:
 ```bsl
 ApplicationRun = New MobileDeviceApplicationRun;
 ApplicationRun.Action = "com.alexkmbk.intent.action.sendZPL";
-ApplicationRun.AdditionalData.Добавить("MacAddress", "00:03:7a:6c:6e:4d");
-ApplicationRun.AdditionalData.Добавить("ZPLCode", "^XA^FO20,20^A0N,25,25^FDThis is a ZPL test.^FS^XZ");
+ApplicationRun.AdditionalData.Add("MacAddress", "00:03:7a:6c:6e:4d");
+ApplicationRun.AdditionalData.Add("ZPLCode", "^XA^FO20,20^A0N,25,25^FDThis is a ZPL test.^FS^XZ");
 ApplicationRun.Run(False);		     		     	
 ```
 **Note:** It is not necessary to call "Connect" command before printing, as soons as the connection will be established automatically if required. 
