@@ -3,7 +3,7 @@ Android service to send ZPL commands to a Bluetooth printer.
 
 The service provides just one intent: **com.alexkmbk.intent.action.sendZPL**
 
-Extra params:
+**Extra params:**
   - MacAddress (Mac address of the Bluetooth printer) (optional)
   - ZPLCode (zpl commands string) (optional)
   - Command (optional, for now only "Connect" command is available)
