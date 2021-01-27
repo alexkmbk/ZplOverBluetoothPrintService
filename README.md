@@ -6,7 +6,7 @@ The service provides just one intent: **com.alexkmbk.intent.action.sendZPL**
 **Extra params:**
   - MacAddress (Mac address of the Bluetooth printer) (optional)
   - ZPLCode (zpl commands string) (optional)
-  - Command (optional, for now only "Connect" command is available)
+  - Command (optional, only "Connect" command is available for now)
   
 **Examples:**
 
